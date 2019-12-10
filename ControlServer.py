@@ -1,6 +1,6 @@
 from socket import *
 from time import ctime
-import Cytron23Aug2019 as c
+import Cytron27Aug2019 as c
 import pigpio
 #servo setup:
 pi=pigpio.pi()
@@ -35,8 +35,8 @@ while True:
             if(k<20) and (k>-20):
                 k=0
             L=i
-            R=i
-            V=i
+            R=j
+            V=k
 
             c.L(L)
             c.R(R)
