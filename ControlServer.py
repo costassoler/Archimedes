@@ -1,6 +1,6 @@
 from socket import *
 from time import ctime
-import Cytron as c
+import Cytron23Aug2019 as c
 import pigpio
 #servo setup:
 pi=pigpio.pi()
