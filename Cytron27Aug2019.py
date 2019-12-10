@@ -29,7 +29,7 @@ def RV(w):
     if(w<=0):
         GPIO.output(DirRV,GPIO.HIGH)
         rv.start(abs(w))
-    if(w<0):
+    if(w>0):
         GPIO.output(DirRV,GPIO.LOW)
         rv.start(abs(w))
 
@@ -37,7 +37,7 @@ def R(x):
     if(x<=0):
         GPIO.output(DirR,GPIO.HIGH)
         r.start(abs(x))
-    if(x<0):
+    if(x>0):
         GPIO.output(DirR,GPIO.LOW)
         r.start(abs(x))
 
