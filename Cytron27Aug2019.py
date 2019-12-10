@@ -41,14 +41,14 @@ def R(x):
         GPIO.output(DirR,GPIO.LOW)
         r.start(abs(x))
 
-def L(y):
+def LV(y):
     if(y>=0):
         GPIO.output(DirL,GPIO.HIGH)
         l.start(abs(y))
     if(y<0):
         GPIO.output(DirL,GPIO.LOW)
         l.start(abs(y))
-def LV(z):
+def L(z):
     if(z>=0):
         GPIO.output(DirLV,GPIO.HIGH)
         lv.start(abs(z))

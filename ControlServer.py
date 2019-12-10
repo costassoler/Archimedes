@@ -34,9 +34,9 @@ while True:
                 j=0
             if(k<20) and (k>-20):
                 k=0
-            L=(i**3)/10000
-            R=(j**3)/10000
-            V=(k**3)/10000
+            L=i
+            R=i
+            V=i
 
             c.L(L)
             c.R(R)
