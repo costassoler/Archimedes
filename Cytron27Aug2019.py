@@ -1,26 +1,27 @@
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-DirRV=2
-PwmRV=3
+
+DirRV=4
+PwmRV=17
 GPIO.setup(PwmRV,GPIO.OUT)
 GPIO.setup(DirRV,GPIO.OUT)
 rv=GPIO.PWM(PwmRV,100)
 
-DirR=4
-PwmR=17
+DirR=27
+PwmR=22
 GPIO.setup(DirR,GPIO.OUT)
 GPIO.setup(PwmR,GPIO.OUT)
 r=GPIO.PWM(PwmR,100)
 
-DirL=27
-PwmL=22
+DirL=10
+PwmL=9
 GPIO.setup(DirL,GPIO.OUT)
 GPIO.setup(PwmL,GPIO.OUT)
 l=GPIO.PWM(PwmL,100)
 
-DirLV=10
-PwmLV=9
+DirLV=5
+PwmLV=6
 GPIO.setup(DirLV,GPIO.OUT)
 GPIO.setup(PwmLV,GPIO.OUT)
 lv=GPIO.PWM(PwmLV,100)
